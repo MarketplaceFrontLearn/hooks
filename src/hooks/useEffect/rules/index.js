@@ -3,10 +3,14 @@ import { useState, useEffect } from 'react'
 const EffectRule = () => {
   const [accountName, setAccountName] = useState('Orest');
   
-  useEffect(() => {
-	localStorage.setItem('formData', accountName);
-  }, [])
   
+  //Если поставить условие, то react-hooks-eslint ен позволит скомпилить
+  // if(accountName === ''){
+  //   useEffect(() => {
+	//   localStorage.setItem('formData', accountName);
+  //   }, [])
+  // }
+  //
   const [accountDetail, setAccountDetail] = useState('Active');
   
   useEffect(() => {

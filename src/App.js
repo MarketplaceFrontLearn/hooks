@@ -65,6 +65,9 @@ function App() {
 				  <Link to="/useMemoExample">useMemoExample</Link>
 				</li>
 				<li>
+				  <Link to="/useCallbackExample">useCallbackExample</Link>
+				</li>
+				<li>
 				  <Link to="/customHooks">customHooks</Link>
 				</li>
 				<li>
@@ -100,6 +103,9 @@ function App() {
 			  <ImperativeHandleHook/>
 			</Route>
 			<Route path="/useMemoExample">
+			  <UseMemoExample/>
+			</Route>
+			<Route path="/useCallbackExample">
 			  <UseMemoExample/>
 			</Route>
 			<Route path="/customHooks">
