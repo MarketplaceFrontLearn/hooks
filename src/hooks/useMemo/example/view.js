@@ -10,7 +10,7 @@ const ViewImage = () => {
 }
 
 const ViewSpan = ({name, lastName, ages}) => {
-
+    console.log('renderer')
     return <span>{name} {lastName} {Math.floor(ages)}</span>
 }
 
